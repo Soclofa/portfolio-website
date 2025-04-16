@@ -69,7 +69,7 @@ export function StickyNavbar() {
   }, []);
 
   return (
-    <Navbar className="mx-auto max-w-screen-xl px-6 py-3">
+    <Navbar className="sticky top-0 z-50 mx-auto max-w-screen-xl px-6 py-3 bg-white shadow-md">
       <div className="flex items-center justify-between text-blue-gray-900">
         <Typography
           as={Link}
@@ -77,7 +77,11 @@ export function StickyNavbar() {
           variant="h6"
           className="mr-4 cursor-pointer py-1.5"
         >
-          Avi Soclof
+          <img
+            src="/images/logo512.png"
+            alt="Avi-Soclof-logo"
+            style={{ width: "8%", height: "auto", borderRadius: "50%" }}
+          />
         </Typography>
         <div className="hidden lg:block">
           <NavList />
