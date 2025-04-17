@@ -7,8 +7,9 @@ import {
 // Updated ProfileCard Component
 export function ProfileCard({
   name = "Avi Soclof",
-  title = "Computer Science Student | Jerusalem College of Technology",
-  profileImage = "images/IMG_2809_edited.jpg",
+  title = "Computer Science Student",
+  profileImage = "images/profile.jpg",
+  school = "Jerusalem College of Technology",
 }) {
   return (
     <Card className="w-full h-full flex flex-col">
@@ -28,6 +29,18 @@ export function ProfileCard({
           <Typography color="blue-gray" className="font-medium" textGradient>
             {title}
           </Typography>
+
+          {/* School Icon and Name in One Row */}
+          <div className="flex items-center justify-center mt-2">
+            <img
+              src="/images/school.svg" // Replace with the correct path to your school icon
+              alt="school"
+              className="h-5 w-5 mr-2"
+            />
+            <Typography color="blue-gray" className="font-medium">
+              {school}
+            </Typography>
+          </div>
         </div>
       </CardBody>
     </Card>

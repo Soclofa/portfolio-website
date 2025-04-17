@@ -4,7 +4,7 @@ import { Typography } from "@material-tailwind/react";
 export function AboutSection() {
   return (
     <div className="bg-white p-6 rounded-lg shadow-md text-left">
-      <Typography variant="h3" color="blue-gray" className="mb-4 text-left">
+      <Typography variant="h3" color="blue-gray" className="mb-2 text-left">
         Hello & Shalom!
       </Typography>
       <Typography color="blue-gray" className="font-normal text-left">

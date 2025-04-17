@@ -6,6 +6,7 @@ import { ProfileCard } from "./components/profile";
 import { AboutSection } from "./components/IntroParagraph";
 import { SkillsCards } from "./components/skillsCard";
 import { Links } from "./components/links";
+import { Projects } from "./components/Projects";
 import PDFViewer from "./components/pdfViewer"; // Adjust path as needed
 
 import "./App.css";
@@ -26,7 +27,6 @@ const ClevelandSports = () => (
   </div>
 );
 
-// Updated Home component with better spacing
 const Home = () => (
   <div>
     {/* Parent container with flex-row for alignment */}
@@ -38,24 +38,31 @@ const Home = () => (
         </div>
       </div>
 
-      {/* Right side - About Section and Links with reduced gap */}
-      <div className="md:w-2/3 flex flex-col space-y-4">
-        {/* About Section */}
+      {/* Right side - About Section and Links */}
+      <div className="md:w-2/3 flex flex-col space-y-4 justify-center">
         <div className="w-full">
           <AboutSection />
         </div>
-
-        {/* Links */}
         <div className="w-full">
           <Links />
         </div>
       </div>
     </div>
 
-    {/* Rest of the content */}
+    {/* Divider */}
     <div className="border-t border-gray-300 mt-4"></div>
+
+    {/* Skills Section */}
     <div className="flex flex-col items-center p-6 max-w-screen-xl mx-auto">
       <SkillsCards />
+    </div>
+
+    {/* Divider */}
+    <div className="border-t border-gray-300 mt-4"></div>
+
+    {/* Projects Section */}
+    <div className="w-full max-w-screen-xl mx-auto">
+      <Projects />
     </div>
   </div>
 );

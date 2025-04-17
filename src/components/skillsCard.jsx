@@ -101,7 +101,7 @@ export function SkillsCards() {
     { title: "Web Development", items: webDev },
     { title: "Databases", items: databases },
     { title: "AWS Services", items: awsServices },
-    { title: "Version Control", items: versionControl },
+    { title: "OS & Version Control", items: versionControl },
   ];
 
   // Split categories into rows
